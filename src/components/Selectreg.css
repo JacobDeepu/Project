@@ -1,0 +1,30 @@
+.select {
+    align-items: center;
+    background-image: url("https://www.careerguide.com/career/wp-content/uploads/2021/04/worker-visa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    align-self: center;
+    align-content: center;
+    padding-bottom: 150px;
+    padding-top: 200px;
+}
+.selectform {
+    margin-left: 25%;
+    background: radial-gradient(rgb(235, 239, 239), rgb(87, 180, 199));
+    text-align: center;
+    width: 40%;
+    padding-bottom: 50px;
+    padding-top: 20px;
+
+    .selectbutton {
+        color: aliceblue;
+
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 90px;
+        background: linear-gradient(rgb(50, 143, 171), rgb(83, 99, 104));
+    }
+}

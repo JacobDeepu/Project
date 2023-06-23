@@ -1,0 +1,15 @@
+.contact {
+    color: rgb(12, 13, 14);
+    padding-bottom: 533px;
+
+    background-image: url("https://media.istockphoto.com/id/693655876/photo/man-hands-typing-on-a-laptop-in-a-workplace-business-black-and-white.jpg?s=170667a&w=0&k=20&c=bIoM3j2T8GfRwfzSRmxD1yDq73M1T_NhXYTu76W2X3c=");
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    text-align: center;
+}
+.contacthead {
+    padding-top: 20px;
+}
