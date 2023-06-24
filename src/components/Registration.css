@@ -27,11 +27,7 @@
 }
 .main {
     background-image: url("https://www.beroeinc.com/assets/images/uploads/Talent-migration-can-help-solve-labor_800x450px.jpg");
-
-    display: flex;
-    flex-direction: column;
     background-repeat: no-repeat;
-    text-align: center;
     background-size: cover;
 }
 
