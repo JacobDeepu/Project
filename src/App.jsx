@@ -8,17 +8,18 @@ import Selectreg from "./components/Selectreg";
 import { Register } from "./components/Register";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from "./components/Home";
+import Home from "./components/Home";
 import JobSearch from "./components/JobSearch";
 import JobList from "./components/JobList";
 import Employer from "./components/Employer";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import Login from "./components/authentication/Login";
 
 function App() {
     return (
-        <div>
+        <>
             <BrowserRouter>
                 <Navbar />
                 <Routes>
@@ -31,12 +32,11 @@ function App() {
                     <Route exact path="/employer" element={<Employer />} />
                     <Route exact path="/about" element={<About />} />
                     <Route exact path="/contact" element={<Contact />} />
+                    <Route exact path="/login" element={<Login />} />
                 </Routes>
-                <div className="foot">
-                    <Footer />
-                </div>
+                <div className="foot">{/* <Footer /> */}</div>
             </BrowserRouter>
-        </div>
+        </>
     );
 }
 
