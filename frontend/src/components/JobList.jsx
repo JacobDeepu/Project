@@ -10,14 +10,18 @@ export default function JobList() {
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
     const [sort, setSort] = useState("sort");
+    
 
     const handleChange = (event) => {
         setSort(event.target.value);
     };
     return (
-        <div className="App" style={{ backgroundImage: "bg1.jpeg" }}>
-            <div>
-                <div className="navbar">
+        <section className="pt-24 main">
+        <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-auto lg:py-0">
+            {/* <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700"> */}
+            <div className="">
+            <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
+                {/* <div className="navbar">
                     <Link to="#" className="menu-bars">
                         <FaIcons.FaBars onClick={showSidebar} />
                     </Link>
@@ -41,24 +45,22 @@ export default function JobList() {
                         })}
                     </ul>
                 </nav>
-            </div>
-            <h1>JOB SEEKER</h1>
-            <br />
-            <br />
+            </div> */}
+            <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-black">JOB SEEKER</h1>
 
-            <div id="wrapper" className="container">
-                <h2 className="listing"></h2>
-                <table className="forma">
+            <div id="wrapper" className="p-6 space-y-4 md:space-y-6 sm:p-8">
+                
+                <table style={{ width: "800px" }} className="space-y-4 md:space-y-6">
                     <tr>
                         <th>Name</th>
                         <th>Place</th>
                         <th>Job Description</th>
                         <th></th>
                         <th>
-                            <select value={sort} onChange={handleChange} className="buttons" style={{ backgroundColor: "lightcyan" }}>
-                                <option>sort</option>
-                                <option>Distance</option>
-                                <option>Amount</option>
+                            <select value={sort} onChange={handleChange} className="w-full text-black bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800" style={{ backgroundColor: "lightcyan" }}>
+                                <option style={{color:"black"}}>sort</option>
+                                <option style={{color:"black"}}>Distance</option>
+                                <option style={{color:"black"}}>Amount</option>
                             </select>
                         </th>
                     </tr>
@@ -67,7 +69,7 @@ export default function JobList() {
                         <td>Trivandrum</td>
                         <td>Seting electrical equipment on home</td>
                         <td>
-                            <button className="buttons">Apply</button>
+                            <button className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Apply</button>
                         </td>
                     </tr>
                     <tr>
@@ -75,7 +77,7 @@ export default function JobList() {
                         <td>Sreekaryam</td>
                         <td>Repairing the electric plug and switches</td>
                         <td>
-                            <button className="buttons">Apply</button>
+                            <button className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Apply</button>
                         </td>
                     </tr>
                     <tr>
@@ -83,11 +85,14 @@ export default function JobList() {
                         <td>Kazhakootam</td>
                         <td>Maintenance of electrical circuits</td>
                         <td>
-                            <button className="buttons">Apply</button>
+                            <button className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Apply</button>
                         </td>
                     </tr>
                 </table>
             </div>
         </div>
+        </div>
+        </div>
+        </section>
     );
 }

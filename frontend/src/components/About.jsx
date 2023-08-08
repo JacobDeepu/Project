@@ -2,12 +2,11 @@ import React from "react";
 import "./About.css";
 function About() {
     return (
-        <div className="mainabout">
-            <h2 className="headabout">About Us</h2>
-            <div className="para">
+        <section className="pt-24 main">
+        <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-auto lg:py-0" style={{ backgroundImage: "bg1.jpeg" }}>
+        <div style={{alignContent:"center"}} className="p-6 space-y-4 md:space-y-6 sm:p-8">
+        <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">About</h1>
                 <p>
-                    <br />
-                    <br />
                     The main aim of DESWA is the development of a decentralized platform, built on blockchain technology, to facilitate the connection between skilled workers and
                     <br />
                     potential clients. This innovative platform will ensure a secure, transparent, and decentralized environment. Skilled workers will be able to create profiles, showcasing
@@ -20,6 +19,7 @@ function About() {
                 </p>
             </div>
         </div>
+        </section>
     );
 }
 
